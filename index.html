@@ -34,6 +34,12 @@
         .socialicon {
             font-size: 3em;
         }
+        .homeimage{
+            border-radius: 50% 00% 50% 00%;
+        }
+        .homecontainer{
+            clip-path: polygon(0 0,100% 0, 100% 100%,70% 85% ,0 100%);
+        }
         /* *{
             border: 1px solid red;
         }
@@ -50,6 +56,14 @@
          .portfolioimg:hover{
         transform: scale(1.5);
         }
+        @media(max-width:800px) {
+            .homecontainer{
+            clip-path:none;
+        } 
+        .homeimage{
+            border-radius:100%;
+        }
+        }
         @media(max-width:600px){
             .homeimage {
                display: none;
@@ -58,14 +72,14 @@
            </style>
 </head>
 
-<body>
+<body class="alert alert-secondary">
     <!-- navbar -->
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid " >
+        <nav class="navbar navbar-expand-lg navbar-danger  fixed-top "style="border-bottom: 1px solid  black;">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="./about2.jpg" class="img-fluid  navimg"
                         alt="about image"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                <button class="navbar-toggler " style="color: black;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -90,31 +104,33 @@
     </div>
     <!-- navbar end -->
     <!-- home code -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-10 col-sm-12 col-12 mx-auto mt-5" id="home">
-                <img src="./about2.jpg" alt="home image" class="img-fluid homeimage">
-            </div>
-            <div class="col-lg-6 col-md-10 col-sm-12 col-12 mx-auto mt-5">
-                <div class="my-5" id="resume">
-                    <p class="text-dark">WELCOME TO MY WORLD</p>
-                    <h1 class="display-1 fw-bolder ">Hi I’m <span class="text-danger display-4"> Mahesh Patil </span> <br>
-                        <spn class="display-3 fw-bolder">a Web Developer </spn>
-                    </h1>
-                    <p class="cd-text">I am a passionate front-end Developer. I am started my career in this field as a
-                        front-end Developer using HTML, CSS, and javascript then I move towards the backend as well I
-                        learned PHP for the backend then recently I am learning angular js having created many projects
-                        of angular. nowadays I completed the MEAN stack.</p>
-                    <a href="https://drive.google.com/file/d/1zYhFfT3iOcWLCLs_VdLiYO7--B6WvMgc/view"
-                        target="_blank" class="nav-link" rel="noopener noreferrer"> <button
-                            class="btn btn-outline-danger btn-lg hvr-float-shadow">SEE RESUME</button></a>
+    <div class="container-fluid ">
+        <div class="container  homecontainer alert alert-primary">
+            <div class="row">
+                <div class="col-lg-6 col-md-10 col-sm-12 col-12 mx-auto mt-5">
+                    <div class="my-5" id="resume">
+                        <p class="text-dark">WELCOME TO MY WORLD</p>
+                        <h1 class="display-1 fw-bolder ">Hi I’m <span class="text-danger display-4"> Mahesh Patil </span> <br>
+                            <spn class="display-3 fw-bolder">a Web Developer </spn>
+                        </h1>
+                        <p class="cd-text">I am a passionate front-end Developer. I am started my career in this field as a
+                            front-end Developer using HTML, CSS, and javascript then I move towards the backend as well I
+                            learned PHP for the backend then recently I am learning angular js having created many projects
+                            of angular. nowadays I completed the MEAN stack.</p>
+                        <a href="https://drive.google.com/file/d/1zYhFfT3iOcWLCLs_VdLiYO7--B6WvMgc/view"
+                            target="_blank" class="nav-link" rel="noopener noreferrer"> <button
+                                class="btn btn-outline-danger btn-lg hvr-float-shadow">SEE RESUME</button></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-10 col-sm-12 col-12 mx-auto mt-5" id="home">
+                    <img src="./mahesh.jpg" alt="home image" class="img-fluid border-danger border my-5  homeimage">
                 </div>
             </div>
         </div>
     </div>
     <hr class="text-danger" id="about">
     <!-- home end -->
-    <div class="container">
+    <div class="container alert alert-info">
         <h1 class="display-1 fw-bolder text-center my-3" data-aos="fade-up-right">About me</h1>
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item" data-aos="fade-right">
@@ -305,7 +321,8 @@
     <!-- end of the About section -->
     <hr class="text-danger">
     <!-- social link -->
-    <div class="container">
+   <div class="container-fluid alert alert-danger">
+    <div class="container ">
         <div class="row">
             <div class="col-lg-2 col-md-4  col-sm-4  col-6 mx-auto" >
                <a href="https://www.instagram.com/mspatil551/" target="_blank" class="nav-link hvr-float">
@@ -344,10 +361,11 @@
             </div>
         </div>
     </div>
+   </div>
     <!-- social link end -->
     <hr class="text-primary" id="portfolio">
     <!-- my portfolio start -->
-    <div  class="container-fluid">
+    <div  class="container-fluid alert alert-success">
         <h1 class="display-1 fw-bolder text-center my-3">My Portfolio</h1>
         <div class="container">
             <div class="row">
