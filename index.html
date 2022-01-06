@@ -27,20 +27,7 @@
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .loader_bg{
-            position: fixed;
-            z-index: 9999;
-            /* background: white; */
-            height: 110vh;
-            width: 100vw;
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-            background-image: url('./laptop.gif');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+        
         .navimg {
             height: 3rem;
             border-radius: 50%;
@@ -88,11 +75,7 @@
 
 <body class="alert alert-warning">
     <!-- loder -->
-    <div class="loader_bg ">
-        <div class="loader">
-            
-        </div>
-    </div>
+    
     <!-- loder end -->
     <!-- navbar -->
     <div class="container-fluid " >
@@ -550,11 +533,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script>
-            setTimeout(() => {
-                $('.loader_bg').fadeToggle();
-            },5000);
-        </script>
+        
 </body>
 
 </html>
