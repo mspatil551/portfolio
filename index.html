@@ -35,8 +35,17 @@
         .socialicon {
             font-size: 3em;
         }
-        .homeimage{
+        .curvecontent{
             border-radius: 50% 00% 50% 00%;
+            /* border: 2px solid black; */
+            overflow: hidden;
+            height: 78vh;
+          
+        }
+        .homeimage{
+            transform: translate(1%,-8%);
+            
+            height:80vh;
         }
         .homecontainer{
             clip-path: polygon(0 0,100% 0, 100% 100%,70% 85% ,0 100%);
@@ -57,16 +66,41 @@
          .portfolioimg:hover{
         transform: scale(1.5);
         }
+        @media(max-width:1000px) {
+            .homecontainer{
+            clip-path:none;
+        } 
+        .homeimage{
+            /* border-radius:100%; */
+            /* height:80vh; */
+            transform: translate(5%,-9%);
+            height: 100vh;
+        }
+        .curvecontent{
+            overflow: hidden;
+            height: 80vh;
+            border-radius: 50% 00% 50% 00%;
+            /* border-radius:none; */
+        }
+        }
         @media(max-width:800px) {
             .homecontainer{
             clip-path:none;
         } 
         .homeimage{
-            border-radius:100%;
+            /* border-radius:100%; */
+            /* height:80vh; */
+            transform: translate(4%,-9%);
+            height: 95vh;
+        }
+        .curvecontent{
+            overflow: hidden;
+            border-radius: 50%;
+            /* border-radius:none; */
         }
         }
         @media(max-width:600px){
-            .homeimage {
+            .homeimage, .curvecontent {
                display: none;
            } 
         }
@@ -116,7 +150,7 @@
                 <div class="col-lg-6 col-md-10 col-sm-12 col-12 mx-auto mt-5">
                     <div class="my-5" id="resume">
                         <p class="text-dark">WELCOME TO MY WORLD</p>
-                        <h1 class="display-1 fw-bolder ">Hi I’m <span class="text-danger display-4"> Mahesh Patil </span> <br>
+                        <h1 class="display-4 "> Hi I’m <span class="text-danger display-1 fw-bolder"> <br> Mahesh Patil </span> <br>
                             <spn class="display-3 fw-bolder">a Web Developer </spn>
                         </h1>
                         <p class="cd-text">I am a passionate front-end Developer. I am started my career in this field as a
@@ -128,7 +162,9 @@
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-10 col-sm-12 col-12 mx-auto mt-5" id="home">
-                    <img src="./mahesh.jpg" alt="home image" class="img-fluid border-danger border my-5  homeimage">
+                   <div class="curvecontent">
+                    <img src="./about2.jpg" alt="home image" class="img-fluid    my-5  homeimage">
+                   </div>
                 </div>
             </div>
         </div>
